@@ -1,43 +1,54 @@
-body{
+body {
     background: black;
     height: 100px;
     color: white;
 }
 
-.sidebar{
+.sidebar {
     width: 150px;
     height: 100vh;
     position: absolute;
     background: #1D1D22;
 }
 
-.sidebar a, .sidebar a.active, .sidebar a:hover, .sidebar .logo{
+.sidebar a,
+.sidebar a.active,
+.sidebar a:hover,
+.sidebar .logo {
     background: #1D1D22;
     text-align: center;
     border: 0px;
 }
 
-.sidebar .logo{
-    border-bottom: 5px solid black ;
+.sidebar .logo {
+    border-bottom: 6px solid black;
+    color: #1D1D22;
 }
 
-.sidebar a:not(.active){
+.sidebar a:not(.active) {
     color: white;
 }
 
-.sidebar a.active{
+.sidebar a.active {
     color: #25ca7f;
 }
 
-.sidebar a .bi{
+.sidebar a .bi {
     font-size: 20px;
 }
 
-.sidebar a.active .bi{
+.sidebar a.active .bi {
     font-size: 40px;
 }
 
-.content-site{
-    margin-left: 180px;
+.content-site {
+    margin-left: 185px;
 }
 
+.jumbotron {
+    background-color: #1D1D22;
+}
+
+.card {
+    background: #1D1D22;
+}

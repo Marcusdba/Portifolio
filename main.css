@@ -1,12 +1,12 @@
 body {
-    background: black;
+    background: #0e1010;
     height: 100px;
     color: white;
 }
 
 .sidebar {
     width: 150px;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     background: #1D1D22;
 }
@@ -46,29 +46,78 @@ body {
 }
 
 .jumbotron {
-    background-color: #1D1D22;
+    background-color: #070708;
 }
 
-.card {
-    background: #1D1D22;
+.tab-pane {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title-with-border {
+    border-bottom: 1px solid #25ca7f;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.my-location {
+    color: #25ca7f;
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.sub-title-about-me {
+    font-weight: 100;
+    color: white;
+    margin-top: 12px;
+}
+
+.card.service {
+    background: #070708;
+    text-align: center;
+    min-height: 200px;
+}
+
+.card .service-icon {
+    font-size: 50px;
+    background: #0e1010;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    padding-top: 15px;
+    margin-left: 33%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card:hover,
+.card:hover .service-icon {
+    border: 1px solid #25ca7f;
 }
 
 
 /* TimeLine Style*/
 
 ul.timeline {
+    background-color: #070708;
     list-style-type: none;
     position: relative;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 ul.timeline:before {
     content: ' ';
-    background: #d4d9df;
+    background: #25ca7f;
     display: inline-block;
     position: absolute;
     left: 29px;
     width: 2px;
-    height: 100%;
+    height: 90%;
     z-index: 400;
 }
 
@@ -79,13 +128,18 @@ ul.timeline>li {
 
 ul.timeline>li:before {
     content: ' ';
-    background: white;
+    background: #070708;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #22c0e8;
+    border: 3px solid #25ca7f;
     left: 20px;
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+ul.timeline a {
+    color: white !important;
+    font-weight: bold;
 }

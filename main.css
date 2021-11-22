@@ -165,3 +165,12 @@
             color: white !important;
             font-weight: bold;
         }
+        
+        @media (max-width: 600px) {
+            #list-tab {
+                display: none;
+            }
+            .content-site {
+                margin-left: 0px;
+            }
+        }

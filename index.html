@@ -22,8 +22,22 @@
 </head>
 
 <body>
-    <div class="container-fluid">
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#list-home"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav list-group" role="tablist">
+            <a class="nav-link active" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Sobre <span class="sr-only">(current)</span></a>
+            <a class="nav-link" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Experiências</a>
+            <a class="nav-link" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Contato</a>            
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="list-group sidebar" id="list-tab" role="tablist">
@@ -53,14 +67,14 @@
                     </a>
                 </div>
                 <div class="tab-content content-site" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                        <div class="row justify-content-md-center">
+                    <div class="tab-pane fade show active row" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="justify-content-md-center">
                             <h1 class="title-with-border">Sobre mim</h1>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="jumbotron col-md-10">
+                        <div class="row justify-content-md-center padding-element">
+                            <div class="jumbotron">
                                 <div class="media">
-                                    <img width="250px" height="250px" src="https://media-exp1.licdn.com/dms/image/C4E03AQGp9Qf9bGfgEQ/profile-displayphoto-shrink_800_800/0/1634330563857?e=1641427200&v=beta&t=rZbNBJWndDszcoELb308lxJCZ41-r1wIOBi3ub4_roY" class="mr-3" alt="...">
+                                    <img id="img_bruno" src="https://media-exp1.licdn.com/dms/image/C4E03AQGp9Qf9bGfgEQ/profile-displayphoto-shrink_800_800/0/1634330563857?e=1641427200&v=beta&t=rZbNBJWndDszcoELb308lxJCZ41-r1wIOBi3ub4_roY" class="mr-3" alt="...">
                                     <div class="media-body">
                                         <h2 class="mt-0">Marcus Bruno</h2>
                                         <h6 class="mt-0 my-location">
@@ -68,8 +82,7 @@
                                                 <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
                                               </svg> Brasília, Brasil</h6>
 
-                                        <p>Oi!</p>
-                                        <p>Meu nome é Marcus Bruno e sou desenvolvedor com mais de um ano de experiência profissional e trabalhei com muitos projetos desde então.</p>
+                                        <p>Ola! Meu nome é Marcus Bruno e sou desenvolvedor com mais de um ano de experiência profissional e trabalhei com muitos projetos desde então.</p>
                                         <p>Atualmente meu trabalho tem sido como Desenvolvedor Full Stack and Mobile.</p>
                                         <p>Hoje meus trabalhos foram Developer Fullstack e Mobile.</p>
                                         <p>A partir de fevereiro, vou me mudar para Dublin, na Irlanda.</p>
@@ -77,14 +90,14 @@
                                         <p>Tenho alguns hobbies, o que mais gosto é viajar e praticar esportes.</p>
                                     </div>
                                 </div>
-                                <div class="row" style="margin-top: 40px;">
-                                    <div class="col-md-4">
+                                <div class="row" style="margin-top: 40px;text-align: center;">
+                                    <div class="col-lg-4">
                                         <h5 class="sub-title-about-me">Desenvolvedor Web Junior</h5>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4">
                                         <h5 class="sub-title-about-me">Disponível Para Contratação</h5>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-lg-4">
                                         <a href="#">
                                             <button type="button" class="btn btn-dark btn-lg col-md-12">Baixar Curriculum</button>
                                         </a>
@@ -93,12 +106,51 @@
                             </div>
                         </div>
 
-                        <div class="row justify-content-md-center">
+                        <div class="justify-content-md-center">
                             <h1 class="title-with-border">Serviços</h1>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="row col-md-10">
-                                <div class="col-md-4">
+                        <div class="justify-content-md-center padding-element">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="card service">
+                                        <div class="card-body">
+
+                                            <div class="service-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                                                <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+                                              </svg>
+                                            </div>
+
+                                            <h5 class="card-title">Front End Developer</h5>
+
+                                            <p class="card-text">
+                                                HTML, CSS e JAVASCRIPT
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card service">
+                                        <div class="card-body">
+
+
+                                            <div class="service-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                                                <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+                                              </svg>
+                                            </div>
+
+                                            <h5 class="card-title">Front End Developer</h5>
+
+                                            <p class="card-text">
+                                                HTML, CSS e JAVASCRIPT
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
                                     <div class="card service">
                                         <div class="card-body">
 
@@ -121,13 +173,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                        <div class="row justify-content-md-center">
+                    <div class="tab-pane fade row" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="justify-content-md-center">
                             <h2 class="title-with-border">Resumo</h2>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="row col-md-10">
-                                <div class="col-md-6">
+                        <div class="justify-content-md-center padding-element">
+                            <div class="row">
+                                <div class="col-lg-6">
                                     <h3 class="title-with-border">Esperiências</h3>
                                     <ul class="timeline">
                                         <li>
@@ -144,7 +196,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <h3 class="title-with-border">Formação Acadêmica</h3>
                                     <ul class="timeline">
                                         <li>
@@ -157,11 +209,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
+                        <div class="justify-content-md-center">
                             <h2 class="title-with-border">Habilidades</h2>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-10 jumbotron skills">
+                        <div class="justify-content-md-center padding-element">
+                            <div class="jumbotron skills">
                                 <span>
                                 HTML
                             <div class="progress">
@@ -178,15 +230,16 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                        <div class="row justify-content-md-center">
+                    <div class="tab-pane fade row" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="justify-content-md-center">
                             <h1 class="title-with-border">Contato</h1>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col-md-10 row jumbotron" style="text-align: center;">
+                        <div class="padding-element justify-content-md-center">
+                            <div class="row jumbotron" style="text-align: center;">
                                 <div class="col-md-4">
                                     <span>Linkedin</span>
-                                    <a href="https://www.linkedin.com/in/marcus-bruno-b2777514b/">https://www.linkedin.com/in/marcus-bruno-b2777514b/</a>
+                                    <a href="https://www.linkedin.com/in/marcus-bruno-b2777514b/">
+                                       <p>https://www.linkedin.com/in/marcus-bruno-b2777514b/</p></a>
                                 </div>
                                 <div class="col-md-4">
                                     <span>E-mail</span>

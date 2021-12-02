@@ -3,14 +3,38 @@
             height: 100%;
             color: white;
         }
-        
+
+        .col-12{
+            padding: 0px;
+        }
+
+        #img_bruno{
+            height: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+           
         .sidebar {
             width: 150px;
             height: 100%;
             position: fixed;
             background: #1D1D22;
         }
+
+        .navbar {
+            background: #1D1D22 !important;
+        }
         
+        .navbar-light .navbar-brand, 
+        .navbar-light .navbar-nav .nav-link {           
+            color: white !important;
+        }
+
+        .navbar-toggler{
+            background: white;
+            float: right;
+        }
+
         .sidebar a,
         .sidebar a.active,
         .sidebar a:hover,
@@ -60,13 +84,14 @@
         .tab-pane {
             padding-top: 100px;
             padding-bottom: 100px;
+
         }
         
         .title-with-border {
             border-bottom: 1px solid #25ca7f;
             margin-bottom: 50px;
             text-align: center;
-            padding-bottom: 5px;
+            padding-bottom: 0px;
         }
         
         .my-location {
@@ -77,7 +102,7 @@
         p {
             margin-bottom: 0px;
         }
-        
+              
         .sub-title-about-me {
             font-weight: 100;
             color: white;
@@ -96,10 +121,15 @@
             border-radius: 100%;
             width: 80px;
             height: 80px;
-            padding-top: 15px;
-            margin-left: 33%;
-            margin-top: 50px;
+            padding-top: 15px;       
             margin-bottom: 50px;
+        }
+
+        .card-body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
         }
         
         .card:hover,
@@ -122,6 +152,8 @@
         .skills .progress-bar {
             background-color: #25ca7f;
         }
+
+     
         /* TimeLine Style*/
         
         ul.timeline {
@@ -165,12 +197,44 @@
             color: white !important;
             font-weight: bold;
         }
+
+        .padding-element {
+            padding-left: 20px;
+            padding-right: 20px;                
+    }
+    .navbar {
+        display: none;
+    }
         
         @media (max-width: 600px) {
             #list-tab {
                 display: none;
+            }            
+            .navbar {
+                display: block;
             }
             .content-site {
-                margin-left: 0px;
+                margin-left: 0px;         
+            }  
+            .tab-pane{
+                padding-top: 70px;
             }
+         }
+         
+
+        @media (min-width: 1300px){
+            .padding-element {
+                padding-left: 100px;
+                padding-right: 100px;                
         }
+    }   
+
+    @media (max-width: 950px){     
+        .media img{
+            display: none;
+        }
+
+        .media h2, h6 {
+            text-align: center;
+        }
+    }

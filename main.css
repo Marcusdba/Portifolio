@@ -206,7 +206,7 @@
         display: none;
     }
         
-        @media (max-width: 450px) {
+        @media (max-width: 600px) {
             #list-tab {
                 display: none;
             }            
